@@ -21,21 +21,31 @@ function Section2() {
   });
   const onSubmit = data => {
     console.log(data)
-    axios({
-      method: "post",
-      url: `${process.env.REACT_APP_API}`,
-      headers: { "content-type": "application/json" },
-      data: data
-    })
-    .then(result => {
-      if (result.data.sent) {
-        setmailSent(result.data.sent)
-        setError(false)
-      } else {
-        setError(true)
+    const form_data = new FormData()
+    for ( var key in data ) {
+        form_data.append(key, data[key]);
+    }
+    console.log(process.env.PUBLIC_URL+'/assets/sendsee.php')
+    fetch(process.env.PUBLIC_URL+'/assets/sendsee.php', {
+      method: 'POST',
+      body: JSON.stringify(data) 
+    }).then((response) => {
+      if (response.ok) {
+        console.log(response)
+        console.log('ok')
       }
-    })
-    .catch(error => setError( error.message ));
+    }).catch(error => console.log('error'));
+
+    // axios({
+    //   method: "post",
+    //   url: process.env.PUBLIC_URL+'/assets/sendsee.php',
+    //   headers: { "content-type": "application/json" },
+    //   data: fData
+    // })
+    // .then(result => {
+    //   console.log(result)
+    // })
+    // .catch(error => setError( error.message ));
 
   };
   return (
@@ -64,8 +74,8 @@ function Section2() {
          
         </div>
       </Modal>  }
-      <div className='w:11/12 mx:auto flex gap:50 flex-direction:column flex-direction:row@md'>
-        <div className='w:full w:1/2@md'>
+      <div className='w:11/12 mx:auto flex gap:50 flex-direction:column flex-direction:row@md' >
+        <div className='w:full w:1/2@md' data-aos="fade-up" data-aos-duration="1500">
           <div className='f:#20494C f:25 f:bold mt:25 hidden block@md'>先嗇宮站250米 28-60坪</div>
           <div className='h:2 bg:#20494C w:full my:25 hidden block@md'></div>
           <div className='flex ai:center gap-x:5 mb:25 mt:35 mt:0@md'>
@@ -135,29 +145,24 @@ function Section2() {
               <button className='bg:#032c6a px:8 py:12 r:5 f:bold w:full t:14 f:#fff' type='submit'>送出</button>
               <button className='bg:#032c6a px:8 py:12 r:5 f:bold w:full t:14 f:#fff' type='reset'>取消</button>
             </div>
-            <ErrorMessage
-              errors={errors}
-              name="singleErrorInput"
-              render={({ message }) => <p>{message}</p>}
-            />
-            
+            <div>{error}  {mailSent}</div>            
           </form>
         </div>
       </div>
-      {/* 冠德大直湛 冠德文心綻 了解更多冠德 */}
+      {/* 冠德大直3號出口 冠德文心綻 了解更多冠德 */}
       
       <div className='w:11/12 mx:auto pb:30'>
         <div className='h:2 bg:#20494C w:full my:65'></div>
         <div className='w:8/12 mx:auto flex gap:50 flex-direction:column flex-direction:row@md'>
-          <a href="https://www.kindom.com.tw/artofliving/?utm_source=google&utm_medium=pmax&utm_campaign=0812&gclid=CjwKCAjwo_KXBhAaEiwA2RZ8hM6YN0LtKzVCE3BemS1mpjqFAzQ2vAel8Ypk7fb8tK5oFmCLW7YKkBoCDtEQAvD_BwE" target="_blank">
+          <a href="https://www.kindom.com.tw/artofliving/?utm_source=google&utm_medium=pmax&utm_campaign=0812&gclid=CjwKCAjwo_KXBhAaEiwA2RZ8hM6YN0LtKzVCE3BemS1mpjqFAzQ2vAel8Ypk7fb8tK5oFmCLW7YKkBoCDtEQAvD_BwE" target="_blank" data-aos="fade-up" data-aos-duration="1500">
             <img src={process.env.PUBLIC_URL+'/images/section2_p01.png'} alt="" className='w:full'/>
             <div className='f:#20494C f:15 f:bolder mt:15'>冠德大直3號出口</div>
           </a>
-          <a href="https://www.kindom.com.tw/g8/" target="_blank">
+          <a href="https://www.kindom.com.tw/g8/" target="_blank" data-aos="fade-up" data-aos-duration="1500">
             <img src={process.env.PUBLIC_URL+'/images/section2_p02.png'} alt="" className='w:full'/>
             <div className='f:#20494C f:15 f:bolder mt:15'>冠德文心綻</div>
           </a>
-          <a href="https://www.kindom.com.tw/portfolio/" target="_blank">
+          <a href="https://www.kindom.com.tw/portfolio/" target="_blank" data-aos="fade-up" data-aos-duration="1500">
             <img src={process.env.PUBLIC_URL+'/images/section2_p03.png'} alt="" className='w:full'/>
             <div className='f:#20494C f:15 f:bolder mt:15'>了解更多冠德</div>
           </a>

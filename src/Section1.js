@@ -17,7 +17,7 @@ function Section1() {
         }
       <div className='min-h:50vh min-h:70vh@sm w:full rel  z:0  hidden@md overflow-x:scroll'> 
 
-        <div className='w:160% w:117%@sm h:600px min-h:70vh@sm overflow-x:hidden overflow-y:hidden bg:bottom bg:cover bg:no-repeat transition:width'
+        <div className='w:150% w:117%@sm h:600px min-h:70vh@sm overflow-x:hidden overflow-y:hidden bg:bottom bg:cover bg:no-repeat transition:width'
           style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/section1_map_mb.png'})`}}
         >
         </div>
