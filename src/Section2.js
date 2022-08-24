@@ -22,13 +22,20 @@ function Section2() {
   const onSubmit = data => {
     console.log(data)
     const form_data = new FormData()
-    for ( var key in data ) {
-        form_data.append(key, data[key]);
-    }
+    form_data.append("name", data.name);
+    form_data.append("tel", data.tel);
+    form_data.append("mail", data.mail);
+    form_data.append("house_types", data.house_types);
+    form_data.append("area", data.area);
+    // dtat.checkit
+
     console.log(process.env.PUBLIC_URL+'/assets/sendsee.php')
-    fetch(process.env.PUBLIC_URL+'/assets/sendsee.php', {
+    let url1 = process.env.PUBLIC_URL+'/assets/sendsee.php'
+    let url2 = process.env.PUBLIC_URL+'/api/contact/index.php'
+    fetch(url1, {
       method: 'POST',
-      body: JSON.stringify(data) 
+      headers: {"Content-type": "application/x-www-form-urlencoded; charset=UTF-8"},
+      body: Object.entries(data).map(([k,v])=>{return k+'='+v}).join('&')
     }).then((response) => {
       if (response.ok) {
         console.log(response)
@@ -38,14 +45,18 @@ function Section2() {
 
     // axios({
     //   method: "post",
-    //   url: process.env.PUBLIC_URL+'/assets/sendsee.php',
+    //   url: url2,
     //   headers: { "content-type": "application/json" },
-    //   data: fData
+    //   data:data
     // })
     // .then(result => {
-    //   console.log(result)
+    //   if (result.data.sent) {
+    //     console.log(result.data)
+    //     console.log('ok')
+    //   }
+      
     // })
-    // .catch(error => setError( error.message ));
+    // .catch(error => console.log('error'));
 
   };
   return (

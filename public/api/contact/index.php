@@ -6,8 +6,7 @@ header("Access-Control-Allow-Origin: *");
 header('Access-Control-Allow-Headers: Content-Type');
 $rest_json = file_get_contents("php://input");
 $_POST = json_decode($rest_json, true);
-
-if( empty($_POST['name']) && empty($_POST['email']) ) {
+if( empty($_POST['name']) && empty($_POST['mail']) ) {
     echo json_encode(
         [
            "sent" => false,
@@ -20,24 +19,23 @@ if( empty($_POST['name']) && empty($_POST['email']) ) {
 if ($_POST){
     //@important: Please change this before using
     http_response_code(200);
-    $subject = 'Contact from: ' . $_POST['name']. '來自冠德官網的訪客信';
-    $from = $_POST['email'];
+    $subject = 'Contact from: ' . $_POST['name']. '冠德方舟計畫';
+    $from = $_POST['mail'];
 
     $namess = $_POST['name'] ;
     $tel = $_POST['tel'];
-    $email = $_POST['email'] ;
+    $email = $_POST['mail'] ;
     $house_types = $_POST['house_types']; 
     $area = $_POST['area']; 
-    $msg = 
-    "顧客姓名: $namess\n" . 
-    "聯絡電話: $phone\n" .    
+    $message = "顧客姓名: $namess\n" . 
+    "聯絡電話: $tel\n" .    
     "電子信箱: $email\n" .
     "房屋類型: $house_types\n" .
-    "居住區域: $area\n" 
+    "居住區域: $area\n" .
 
-    $message = $_POST['msg'];       
+    // $message = $_POST['msg'];       
     //Actual sending email
-    $sendEmail = new Sender($adminEmail, $from, $subject, $msg);
+    $sendEmail = new Sender($adminEmail, $from, $subject, $message);
     $sendEmail->send();
 } else {
  // tell the user about error
