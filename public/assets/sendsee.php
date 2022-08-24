@@ -1,6 +1,6 @@
 <?php
-	$sendTo = "kilokingw@gmail.com,maizizi@gmail.com";//收件者
-	$subject = "來自冠德官網的訪客信"; //主旨
+	$sendTo = "kilokingw@gmail.com,maizizi@gmail.com,h2oart04@gmail.com";//收件者
+	$subject = "來自冠德的訪客信"; //主旨
 	$namess = $_POST['name'] ;
 	$tel = $_POST['tel'];
 	$email = $_POST['mail'] ;
