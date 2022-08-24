@@ -10,7 +10,10 @@ if( empty($_POST['name']) && empty($_POST['mail']) ) {
     echo json_encode(
         [
            "sent" => false,
-           "message" => $SendMailEmptyerrorMessage
+           "message" => $SendMailEmptyerrorMessage,
+					 "decode_data" => $_POST,
+					 "rest_data" => $rest_json 
+
         ]
     ); 
     exit();
@@ -27,11 +30,12 @@ if ($_POST){
     $email = $_POST['mail'] ;
     $house_types = $_POST['house_types']; 
     $area = $_POST['area']; 
-    $message = "顧客姓名: $namess\n" . 
-    "聯絡電話: $tel\n" .    
-    "電子信箱: $email\n" .
-    "房屋類型: $house_types\n" .
-    "居住區域: $area\n" .
+		$message = 'hh123'
+    // $message = "顧客姓名: $namess\n" . 
+    // "聯絡電話: $tel\n" .    
+    // "電子信箱: $email\n" .
+    // "房屋類型: $house_types\n" .
+    // "居住區域: $area\n" .
 
     // $message = $_POST['msg'];       
     //Actual sending email

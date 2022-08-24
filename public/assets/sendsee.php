@@ -1,6 +1,4 @@
 <?php
-	ini_set( 'display_errors', 1 );
-	error_reporting( E_ALL );
 	$sendTo = "kilokingw@gmail.com,maizizi@gmail.com";//收件者
 	$subject = "來自冠德官網的訪客信"; //主旨
 	$namess = $_POST['name'] ;
@@ -9,14 +7,11 @@
 	$house_types = $_POST['house_types']; 
 	$area = $_POST['area']; 
 
-	$msg = 
-		"顧客姓名: $namess\n" . 
-		"聯絡電話: $tel\n" .    
-		"電子信箱: $email\n" .
-		"房屋類型: $house_types\n" .
-		"居住區域: $area\n" .
-
-
+	$msg = "顧客姓名:".$namess."\n".
+		"聯絡電話:". $tel."\n".   
+		"電子信箱:". $email."\n".
+		"房屋類型:". $house_types."\n".
+		"居住區域:". $area."\n";
 	mb_internal_encoding("UTF-8");
 	mail($sendTo, $subject, $msg);
 	// if (mail($sendTo, $subject, $msg)) {

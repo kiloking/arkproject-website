@@ -10,6 +10,7 @@ function Section2() {
   const [mailSent, setmailSent] = useState(false);
   const [error, setError] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [formStatus , setFormStatus] = useState(false)
   const { register, handleSubmit, formState: { errors } } = useForm({
     defaultValues: {
       name: "",
@@ -19,17 +20,22 @@ function Section2() {
       area:""
     }
   });
+  const sendFormStatusModal = ()=>{
+    setFormStatus(true)
+
+    setTimeout(()=>{
+      setFormStatus(false)
+    },5000)
+  }
   const onSubmit = data => {
     console.log(data)
-    const form_data = new FormData()
-    form_data.append("name", data.name);
-    form_data.append("tel", data.tel);
-    form_data.append("mail", data.mail);
-    form_data.append("house_types", data.house_types);
-    form_data.append("area", data.area);
+    // const form_data = new FormData()
+    // form_data.append("name", data.name);
+    // form_data.append("tel", data.tel);
+    // form_data.append("mail", data.mail);
+    // form_data.append("house_types", data.house_types);
+    // form_data.append("area", data.area);
     // dtat.checkit
-
-    console.log(process.env.PUBLIC_URL+'/assets/sendsee.php')
     let url1 = process.env.PUBLIC_URL+'/assets/sendsee.php'
     let url2 = process.env.PUBLIC_URL+'/api/contact/index.php'
     fetch(url1, {
@@ -40,6 +46,7 @@ function Section2() {
       if (response.ok) {
         console.log(response)
         console.log('ok')
+        sendFormStatusModal()
       }
     }).catch(error => console.log('error'));
 
@@ -61,6 +68,15 @@ function Section2() {
   };
   return (
     <div className='bg_grad w:full  py:20'>
+      {formStatus &&
+       <Modal>
+        <div className='bg:#00000080 w:full h:full abs inset:0 z:0  ' onClick={()=>setFormStatus(!formStatus)}></div>
+        <div className={`abs z:1 top:50% left:50% transform:translate(-50%,-50%)  bg:white mx:auto px:30 py:14  r:5 border:1|solid|gray-60 w:1/5 ${formStatus ? " opacity:1 blur(0) " : "opacity:0 blur(0.8) "}`}>
+          <div className='f:15 f:bold mt:10 pb:15'> 表單已送出。我們將盡快電話聯絡您，詢問並安排您方便的賞屋時間。如有任何問題，歡迎直接聯繫我們，謝謝！</div>
+        
+        </div>
+       </Modal> 
+      }
       {isOpen && 
       <Modal>
         <div className='bg:#00000080 w:full h:full abs inset:0 z:0  ' onClick={()=>setIsOpen(!isOpen)}></div>
