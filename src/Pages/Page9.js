@@ -3,10 +3,10 @@ import React from 'react'
 function Page9() {
   return (
     <div className='flex ai:center py:8% gap:5 flex:col flex:row@md bg:#E7ECEF bg:white@md'>
-      <div className='flex flex:col w:45%@md gap:5 o:last o:first@md'>
+      <div className=' w:45%@md gap:5 o:last o:first@md'>
         <img src={process.env.PUBLIC_URL+'/images/page9_p01.png'} alt="" className='w:full'/>
       </div>
-      <div className='w:55@md o:first o:last@md'>
+      <div className='w:55%@md o:first o:last@md'>
         <div className='bg:#E7ECEF px:10%@md py:18%@md py:10% '>
           <div className='w:3/4 mx:auto'>
             <img src={process.env.PUBLIC_URL+'/images/page9_title.png'} alt="" className='max-w:full'/>
