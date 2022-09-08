@@ -39,7 +39,7 @@ function App() {
     <div className="App">
       <Header />
       <Section1 />
-      <div className="bg:#E7ECEF block hide@md ">
+      <div className="block hide@md ">
         <Slider {...settings} className="pb:25">
           <div><Page1/></div>
           <div><Page2/></div>

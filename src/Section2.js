@@ -103,7 +103,7 @@ function Section2() {
       </Modal>  }
       <div className='w:11/12 mx:auto flex gap:50 flex-direction:column flex-direction:row@md' >
         <div className='w:full w:1/2@md' data-aos="fade-up" data-aos-duration="1500">
-          <div className='f:#20494C f:25 f:bold mt:25 hidden block@md'>先嗇宮站250米 28-60坪</div>
+          <div className='f:#20494C f:25 f:bold mt:25 hidden block@md'>先嗇宮站漫步3分鐘｜28-60坪．2-4房</div>
           <div className='h:2 bg:#20494C w:full my:25 hidden block@md'></div>
           <div className='flex ai:center gap-x:5 mb:25 mt:35 mt:0@md'>
             <div className='bg:#20494C r:50 p:8 mr:5'><FaFacebookF color='white' size='20' /></div>
@@ -115,7 +115,7 @@ function Section2() {
           </div>
           <div className='flex ai:center gap-x:5 mb:25'>
             <div className='bg:#20494C r:50 p:8 mr:5'><FaMapMarkerAlt  color='white' size='20' /></div>
-            <b className='f:#20494C f:22'>接待中心｜先嗇宮站250米</b>
+            <b className='f:#20494C f:22'>接待中心｜三重重新路五段家樂福斜對面</b>
           </div>
           <div className="mt:40">
 						<iframe width="100%" height="300" className="mb30" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14458.564674461039!2d121.4714928!3d25.0462488!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e628bbffe7dfd71!2z5YWI5ZeH5a6u!5e0!3m2!1szh-TW!2stw!4v1659426132137!5m2!1szh-TW!2stw" frameBorder="0" allowFullScreen=""></iframe>
@@ -164,13 +164,13 @@ function Section2() {
               <div className='flex ai:center jc:center  '>
 
                 <input type="checkbox"  className='px:5 mr:5' id="checkit" name="checkit" defaultChecked {...register("checkit", { required: true})}/>
-                <label htmlFor="checkit" className='f:white'>本人已悉知</label>
+                <label htmlFor="checkit" className='f:white'>我同意通過電話或郵件方式與我聯絡</label>
 								<div className='f:#ca0916 ml:10 t:underline text-underline-offset: cursor:pointer' onClick={()=>setIsOpen(true)}> 個人資料聲明事項 </div>
               </div>
             </div>
             <div className='flex w:3/4 mx:auto gap:10 my:15'>
-              <button className='bg:#032c6a px:8 py:12 r:5 f:bold w:full t:14 f:#fff' type='submit'>送出</button>
-              <button className='bg:#032c6a px:8 py:12 r:5 f:bold w:full t:14 f:#fff' type='reset'>取消</button>
+              <button className='bg:#20494C px:8 py:12 r:5 f:bold w:full t:14 f:#fff' type='submit'>送出</button>
+              <button className='bg:#20494C px:8 py:12 r:5 f:bold w:full t:14 f:#fff' type='reset'>清除</button>
             </div>
             <div>{error}  {mailSent}</div>            
           </form>

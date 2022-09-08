@@ -1,7 +1,7 @@
 @import '@master/normal.css';
 @import '@master/keyframes.css';
-
-body{font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;}
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{font-family: 'Noto Sans TC', arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;}
 @keyframes oxxo{
   from{
       /* left:0; */
@@ -21,8 +21,8 @@ body{font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !impor
   color: white;
   background: #21494C;
 }
-.slick-dots{
-  bottom:1%; 
+.slick-dots{   
+  bottom:5%; 
 }
 .slick-list 
 {
@@ -31,15 +31,16 @@ body{font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !impor
 
 .slick-dots li button {
   /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8); */
-  /* text-shadow: 1px 1px 5px black; */
-  border: 1px solid #20494C;
+  text-shadow: 1px 1px 0px black;
+    /* border: 1px solid #20494C;
     width: 10px;
     height: 10px;
-    border-radius: 50%;
+    border-radius: 50%; */
 }
+
 .slick-dots li button:before{
-  color:transparent !important;
-  margin: -3.1px;
+  /* color:black !important; */
+  /* margin: -3.1px; */
   /* border:1px #21494C solid !important; */
   /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important; */
   /* border-radius: 50%; */
@@ -51,5 +52,5 @@ body{font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !impor
   
 }
 .slick-dots li.slick-active button:before {
-  color:#20494C !important;
+  color:black !important;
 }
