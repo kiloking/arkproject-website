@@ -1,9 +1,7 @@
 import React,{useState} from 'react'
 import { FaFacebookF,FaPhoneAlt,FaMapMarkerAlt,FaAngleDown } from 'react-icons/fa';
 import { useForm, reset } from "react-hook-form";
-import { ErrorMessage } from '@hookform/error-message';
 import Modal from './Components/Modal';
-import axios from "axios";
 function Section2() {
   // #00A3C4
   // #ffffff
@@ -140,7 +138,7 @@ function Section2() {
             </div>
             <div className='w:full  my:20  rel'>
               <select className="block bg:white r:5 appearance:none w:full px:10 py:15" {...register("house_types", { required: true})}>
-                <option selected value="">需要房型</option>
+                <option defaultValue value="">需要房型</option>
 								<option value="28~30-2房">28~30-2房</option>
 								<option value="39~43-3房">39~43-3房</option>
 								<option value="49~50-大3房">49~50-大3房</option>
@@ -150,7 +148,7 @@ function Section2() {
             </div>
             <div className='w:full  my:20 rel'>
               <select className="block bg:white  r:5 appearance:none w:full px:10 py:15" {...register("area", { required: true})}>
-                <option selected value="">居住區域</option>
+                <option defaultValue value="">居住區域</option>
                 <option value="台北市">台北市</option>
                 <option value="三蘆區">三蘆區</option>
                 <option value="新莊區">新莊區</option>
