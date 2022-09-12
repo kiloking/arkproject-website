@@ -39,7 +39,7 @@ function App() {
     <div className="App">
       <Header />
       <Section1 />
-      <div className="block hide@md ">
+      <div className="block md:hidden ">
         <Slider {...settings} className="pb:25">
           <div><Page1/></div>
           <div><Page2/></div>
@@ -53,7 +53,7 @@ function App() {
         </Slider>
       </div>
 
-      <div className="hide block@md">
+      <div className="hidden  md:block">
         <Page1/>
         <Page2/>
         <Page3/>
