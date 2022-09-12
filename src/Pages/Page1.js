@@ -2,8 +2,8 @@ import React from 'react'
 
 function Page1() {
   return (
-    <div className='flex justify-between items-center pt-[8%] pb-[18%] lg:pb-[8%] gap-5 flex-col lg:flex-row bg-white bg-white@md h-screen lg:h-auto  '>
-      <div className='flex flex-col lg:w-45% gap-5 order-last lg:order-first px-[10%] lg:px-0' data-aos="fade-up" data-aos-duration="1500">
+    <div className='flex justify-between items-center pt-[8%] pb-[18%] lg:pb-[8%] gap-1 flex-col lg:flex-row bg-white bg-white@md h-screen lg:h-auto  '>
+      <div className='flex flex-col lg:w-45% gap-2 order-last lg:order-first px-[10%] lg:px-0' data-aos="fade-up" data-aos-duration="1500">
         <img src={process.env.PUBLIC_URL+'/images/page1/page1_p01.png'} alt="" className='w-full '/>
         <img src={process.env.PUBLIC_URL+'/images/page1/page1_p02.png'} alt="" className='w-full '/>
       </div>
