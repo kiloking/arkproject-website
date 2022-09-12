@@ -68,9 +68,9 @@ function Section2() {
     <div className='bg_grad w-full  py-10'>
       {formStatus &&
        <Modal>
-        <div className='bg-[#00000080] w-full h-full abs inset-0 z-0  ' onClick={()=>setFormStatus(!formStatus)}></div>
-        <div className={` absolute z-10 top-[50%] left-[50%] translate-[-50%,-50%]  bg-white mx-auto px-30 py-14  rounded-sm border-slate-200 w-1/5 ${formStatus ? " opacity-100 blur-none " : "opacity-0 blur-sm "}`}>
-          <div className='text-base font-bold mt-5 pb-10'> 表單已送出。我們將盡快電話聯絡您，詢問並安排您方便的賞屋時間。如有任何問題，歡迎直接聯繫我們，謝謝！</div>
+        <div className='bg-[#00000080] w-full h-full  absolute inset-0 z-0  ' onClick={()=>setFormStatus(!formStatus)}></div>
+        <div className={` absolute z-0 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]  bg-white mx-auto px-5 py-4  rounded-sm border-slate-200 w-2/5`}>
+          <div className='text-base font-bold mt-5 pb-5'> 表單已送出。我們將盡快電話聯絡您，詢問並安排您方便的賞屋時間。如有任何問題，歡迎直接聯繫我們，謝謝！</div>
         
         </div>
        </Modal> 
@@ -78,7 +78,7 @@ function Section2() {
       {isOpen && 
       <Modal>
         <div className='bg-[#00000080] w-full h-full  absolute inset-0 z-0  ' onClick={()=>setIsOpen(!isOpen)}></div>
-        <div className=' absolute z-10 top-[50%] left-[50%] translate-[-50%,-50%] w-3/5 h-4/5 bg-white mx-auto px-30 py-14 rounded-sm border-slate-200 overflow-y-scroll'>
+        <div className=' absolute z-10 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-3/5 h-4/5 bg-white mx-auto px-10 py-10 rounded-sm border-slate-200 overflow-y-scroll'>
           <div className='text-lg font-bold mt-4 border-b-1 border-[#999] pb-15'>個人資料保護政策暨隱私權聲明</div>
           <div className='text-base  text-zinc-500 leading-8 mb-6 mt-6'>冠德建設（下稱「本公司」）依據個人資料保護法，向您告知以下隱私權政策規範，若您勾選「我同意隱私權政策」，將表示您已同意本公司之隱私權政策，並同意本公司依以下告知事項，就您的個人資料進行蒐集、處理及利用。您可以自由選擇是否提供相關個人資料，若您拒絕，本公司將可能無法執行本告知事項蒐集目的之業務，致無法向您提供相關服務：</div>
 
@@ -99,11 +99,11 @@ function Section2() {
          
         </div>
       </Modal>  }
-      <div className='w-11/12 mx-auto flex gap-50 flex-col  md:flex-row' >
-        <div className='w-full w-1/2@md' data-aos="fade-up" data-aos-duration="1500">
-          <div className='text-[#20494C] text-3xl font-normal mt-10 mb-10 hidden md:block'>先嗇宮站漫步3分鐘｜28-60坪．2-4房</div>
-          <div className='h-[2px] bg-#20494C w-full my-3 hidden block@md'></div>
-          <div className='flex items-center gap-5 mb-5 mt-35 mt-0@md'>
+      <div className='w-11/12 mx-auto flex gap-10 flex-col  lg:flex-row justify-start' >
+        <div className='w-full  lg:w-1/2' data-aos="fade-up" data-aos-duration="1500">
+          <div className='text-[#20494C] text-2xl font-normal  mb-5 hidden lg:block'>先嗇宮站漫步3分鐘｜28-60坪．2-4房</div>
+          <div className='h-[2px] bg-[#20494C] w-full my-3 hidden  lg:block'></div>
+          <div className='flex items-center gap-5 mb-5 mt-14 mt-0@md'>
             <div className='bg-[#20494C] rounded-full p-4 mr-3'><FaFacebookF color='white' size='20' /></div>
             <a href="https-//www.facebook.com/theButterflyLandscape" target="_blank"><b className='text-[#20494C] text-2xl font-medium'>冠德方舟計劃粉絲團</b></a>
           </div>
@@ -115,39 +115,39 @@ function Section2() {
             <div className='bg-[#20494C] rounded-full p-4 mr-3'><FaMapMarkerAlt  color='white' size='20' /></div>
             <b className='text-[#20494C] text-2xl font-medium'>接待中心｜三重重新路五段家樂福斜對面</b>
           </div>
-          <div className="mt-40">
-						<iframe width="100%" height="300" className="mb30" src="https-//www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14458.564674461039!2d121.4714928!3d25.0462488!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e628bbffe7dfd71!2z5YWI5ZeH5a6u!5e0!3m2!1szh-TW!2stw!4v1659426132137!5m2!1szh-TW!2stw" frameBorder="0" allowFullScreen=""/>
+          <div className="mt-10">
+						<iframe width="100%" height="300" className="mb-10" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14458.564674461039!2d121.4714928!3d25.0462488!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e628bbffe7dfd71!2z5YWI5ZeH5a6u!5e0!3m2!1szh-TW!2stw!4v1659426132137!5m2!1szh-TW!2stw" frameBorder="0" allowFullScreen=""/>
 					</div>
         </div>
         {/* 表單 */}
-        <div className='w-full  md:w-1/2'>
-          <div className='text-[#20494C] text-3xl font-normal mt-1 text-center  md:text-left-left'>線上預約</div>
+        <div className='w-full  lg:w-1/2'>
+          <div className='text-[#20494C] text-2xl font-normal  text-center mb-5  lg:text-left-left'>線上預約</div>
           <div className='h-[2px] bg-[#20494C] w-full my-3'></div>
-          <form onSubmit={handleSubmit(onSubmit)} className="w-full mx-auto my-20  rel" data-aos="fade-up" data-aos-duration="1500" >
-            <div className='w-full  my-20 '>
-              <input type="text" className="block  bg-white  r-5  w-full
-                  px-10 py-15 " placeholder="姓名"    {...register("name", { required: true})}/>
+          <form onSubmit={handleSubmit(onSubmit)} className="w-full mx-auto my-14  rel" data-aos="fade-up" data-aos-duration="1500" >
+            <div className='w-full  my-5 '>
+              <input type="text" className="block  bg-white rounded-md  w-full
+                  px-5 py-5 " placeholder="姓名"    {...register("name", { required: true})}/>
             </div>
-            <div className='w-full  my-20 '>
-              <input type="text" className="block  bg-white r-5 w-full 
-                  px-10 py-15 " placeholder="聯絡電話"    {...register("tel", { required: true})}/>
+            <div className='w-full  my-5 '>
+              <input type="text" className="block  bg-white rounded-md  w-full 
+                  px-5 py-5 " placeholder="聯絡電話"    {...register("tel", { required: true})}/>
             </div>
-            <div className='w-full my-20  '>
-              <input type="mail" className="block  bg-white  r-5  w-full
-                  px-10 py-15 " placeholder="電子信箱"    {...register("mail", { required: true})}/>
+            <div className='w-full my-5  '>
+              <input type="mail" className="block  bg-white rounded-md   w-full
+                  px-5 py-5 " placeholder="電子信箱"    {...register("mail", { required: true})}/>
             </div>
-            <div className='w-full  my-20  rel'>
-              <select className="block bg-white r-5 appearance-none w-full px-10 py-15" {...register("house_types", { required: true})}>
+            <div className='w-full  my-5  relative'>
+              <select className="block bg-white rounded-md appearance-none w-full px-5 py-5" {...register("house_types", { required: true})}>
                 <option defaultValue value="">需要房型</option>
 								<option value="28~30-2房">28~30-2房</option>
 								<option value="39~43-3房">39~43-3房</option>
 								<option value="49~50-大3房">49~50-大3房</option>
 								<option value="59~60-4房">59~60-4房</option>
               </select>
-              <div className='abs top-50% right-15 transform-translateY(-50%) pointer-events-none'> <FaAngleDown /> </div>
+              <div className=' absolute top-[50%] right-5 -translate-Y-[50%] pointer-events-none'> <FaAngleDown /> </div>
             </div>
-            <div className='w-full  my-20 rel'>
-              <select className="block bg-white  r-5 appearance-none w-full px-10 py-15" {...register("area", { required: true})}>
+            <div className='w-full  my-5 relative'>
+              <select className="block bg-white  rounded-md appearance-none w-full px-5 py-5" {...register("area", { required: true})}>
                 <option defaultValue value="">居住區域</option>
                 <option value="台北市">台北市</option>
                 <option value="三蘆區">三蘆區</option>
@@ -155,20 +155,20 @@ function Section2() {
                 <option value="板橋區">板橋區</option>
                 <option value="新北其它區域">新北其它區域</option>
               </select>
-              <div className='abs top-50% right-15 transform-translateY(-50%) pointer-events-none'> <FaAngleDown /> </div>
+              <div className=' absolute top-[50%] right-5 -translate-Y-[50%] pointer-events-none'> <FaAngleDown /> </div>
             </div>
-            <div className='f-#20494C lh-2 f-bold f-15 w-90% mx-auto'>
+            <div className='text-[#20494C] leading-9 font-bold text-base w-[90%] mx-auto'>
               本人已知悉以下個人資料蒐集聲明事項您所登錄的個人資料將作為以下用途：一、本網站所載之相關事項通知 二、客戶管理與服務 三、本公司行銷業務之推廣
               <div className='flex ai-center jc-center  '>
 
                 <input type="checkbox"  className='px-5 mr-5' id="checkit" name="checkit" defaultChecked {...register("checkit", { required: true})}/>
                 <label htmlFor="checkit" className='f-white'>我同意通過電話或郵件方式與我聯絡</label>
-								<div className='f-#ca0916 ml-10 t-underline text-underline-offset- cursor-pointer' onClick={()=>setIsOpen(true)}> 個人資料聲明事項 </div>
+								<div className='text-[#ca0916] ml-2 underline  underline-offset-2 cursor-pointer' onClick={()=>setIsOpen(true)}> 個人資料聲明事項 </div>
               </div>
             </div>
-            <div className='flex w-3/4 mx-auto gap-10 my-15'>
-              <button className='bg-#20494C px-8 py-12 r-5 f-bold w-full t-14 f-#fff' type='submit'>送出</button>
-              <button className='bg-#20494C px-8 py-12 r-5 f-bold w-full t-14 f-#fff' type='reset'>清除</button>
+            <div className='flex w-3/4 mx-auto gap-10 my-16'>
+              <button className='bg-[#20494C] px-4 py-5 rounded-md font-bold w-full t-14 text-white' type='submit'>送出</button>
+              <button className='bg-[#20494C] px-4 py-6 rounded-md font-bold w-full t-14 text-white' type='reset'>清除</button>
             </div>
             <div>{error}  {mailSent}</div>            
           </form>
@@ -176,20 +176,20 @@ function Section2() {
       </div>
       {/* 冠德大直3號出口 冠德文心綻 了解更多冠德 */}
       
-      <div className='w-11/12 mx-auto pb-30'>
-        <div className='h-2 bg-#20494C w-full my-65'></div>
-        <div className='w-8/12 mx-auto flex gap-50 flex-direction-column flex-direction-row@md'>
+      <div className='w-11/12 mx-auto pb-10'>
+        <div className='h-[2px] bg-[#20494C] w-full my-12'></div>
+        <div className='w-8/12 mx-auto flex gap-6 flex--col  lg:flex-row'>
           <a href="https-//www.kindom.com.tw/artofliving/?utm_source=google&utm_medium=pmax&utm_campaign=0812&gclid=CjwKCAjwo_KXBhAaEiwA2RZ8hM6YN0LtKzVCE3BemS1mpjqFAzQ2vAel8Ypk7fb8tK5oFmCLW7YKkBoCDtEQAvD_BwE" target="_blank" data-aos="fade-up" data-aos-duration="1500">
             <img src={process.env.PUBLIC_URL+'/images/section2_p01.png'} alt="" className='w-full'/>
-            <div className='f-#20494C f-15 f-bolder mt-15'>冠德大直3號出口</div>
+            <div className='text-[#20494C] text-base font-bolder mt-2'>冠德大直3號出口</div>
           </a>
           <a href="https-//www.kindom.com.tw/g8/" target="_blank" data-aos="fade-up" data-aos-duration="1500">
             <img src={process.env.PUBLIC_URL+'/images/section2_p02.png'} alt="" className='w-full'/>
-            <div className='f-#20494C f-15 f-bolder mt-15'>冠德文心綻</div>
+            <div className='text-[#20494C] text-base font-bolder mt-2'>冠德文心綻</div>
           </a>
           <a href="https-//www.kindom.com.tw/portfolio/" target="_blank" data-aos="fade-up" data-aos-duration="1500">
             <img src={process.env.PUBLIC_URL+'/images/section2_p03.png'} alt="" className='w-full'/>
-            <div className='f-#20494C f-15 f-bolder mt-15'>了解更多冠德</div>
+            <div className='text-[#20494C] text-base font-bolder mt-2'>了解更多冠德</div>
           </a>
         </div>
 
