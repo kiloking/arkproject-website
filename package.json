@@ -6,7 +6,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@hookform/error-message": "^2.0.0",
-    "@master/css": "^1.35.17",
+    "@master/css": "^1.36.0",
     "@master/keyframes.css": "^1.2.3",
     "@master/normal.css": "^1.9.7",
     "@testing-library/jest-dom": "^5.16.5",
@@ -45,5 +45,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.9",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   }
 }
