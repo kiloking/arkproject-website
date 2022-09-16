@@ -8,9 +8,9 @@ function Page2() {
           {/* <img src={process.env.PUBLIC_URL+'/images/page2_title.png'} alt="" className='w-4/5 w-1/2@md mb-16'/> */}
           <div className='text-3xl lg:text-4xl  font-bold text-[#20494C] tracking-wide leading-10 mb-5'>三環六線軌道經濟<br />
 先嗇宮站漫步3分鐘</div>
-          <div className='text-xl leading-9 tracking-wider text-[#1A1A1A]'>三重二重埔最美麗的豐年軸線，串接三環六線，<br />
+          <div className='text-lg lg:text-xl leading-9 tracking-wider text-[#1A1A1A]'>三重二重埔最美麗的豐年軸線，串接三環六線，<br />
 高效路網縱貫四方，一脈串接最便捷的當代效率與時代文明。</div>
-          <div className='text-xl text-[#1A1A1A] border-l-[12px] border-white pl-5 leading-9 tracking-wider mt-5'>
+          <div className='text-lg lg:text-xl text-[#1A1A1A] border-l-[12px] border-white pl-5 leading-9 tracking-wider mt-5'>
             <div>1站機捷：三蘆雙捷運</div>  
             <div>9橋之都：瞬移台北核心</div> 
             <div>6鐵共構：10分鐘台北車站</div> 

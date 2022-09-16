@@ -12,9 +12,7 @@ function Page5() {
           <div className='lg:py-[8%] flex flex-col justify-around items-center h-full w-4/5 mx-auto'>
             {/* <img src={process.env.PUBLIC_URL+'/images/page5_title.png'} alt="" className='w-full'/> */}
             <div className='text-3xl lg:text-4xl  font-bold text-white border-l-[12px] border-[#B9D1DC]  pt-5 pb-5 pl-[7%] mb-5'>台灣ESG永續建築先行者 - 冠德建設</div>
-            <div className='text-xl leading-9 tracking-wider text-white'>以ESG永續精神為核心，翻轉土地能量、創造城市新生。
-            升級進化冠德4.0+，呼應大地的呼喚，為三重市心種下一座森林，
-            深耕城市，生根自然，生命新生。</div>
+            <div className='text-lg lg:text-xl leading-9 tracking-wider text-white'>冠德建設以ESG永續精神為核心，翻轉土地能量、創造城市新生。升級進化冠德4.0+，呼應大地的呼喚，為三重市心種下一座森林，深耕城市，生根自然，生命新生。</div>
             <img src={process.env.PUBLIC_URL+'/images/page5_p01.png'} alt="" className='w-full'/>
           </div>
 
@@ -26,9 +24,7 @@ function Page5() {
             <div className=' lg:w-4/5 mx-auto'>
               {/* <img src={process.env.PUBLIC_URL+'/images/page5_title.png'} alt="" className='max-w-full mb-16'/> */}
               <div className='text-3xl lg:text-4xl font-bold text-white border-l-[12px] border-[#B9D1DC] lg:border-white pt-5 pb-5 pl-[7%] mb-5'>台灣ESG永續建築先行者</div>
-              <div className='pl-[10%] text-xl leading-9 tracking-wider text-white'>以ESG永續精神為核心，翻轉土地能量、創造城市新生。
-            升級進化冠德4.0+，呼應大地的呼喚，為三重市心種下一座森林，
-            深耕城市，生根自然，生命新生。</div>
+              <div className='pl-[10%] text-lg lg:text-xl leading-9 tracking-wider text-white'>冠德建設以ESG永續精神為核心，翻轉土地能量、創造城市新生。升級進化冠德4.0+，呼應大地的呼喚，為三重市心種下一座森林，深耕城市，生根自然，生命新生。</div>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ function Page4() {
           <div className='lg:w-4/5 mx-auto'>
             {/* <img src={process.env.PUBLIC_URL+'/images/page4_title.png'} alt="" className='max-w-full mb-16'/> */}
             <div className='text-3xl lg:text-4xl  font-bold text-[#20494C] border-l-[12px] border-[#B9D1DC] lg:border-white pt-5 pb-5 pl-[7%] mb-5'>百年富饒文化・424公頃公園為鄰</div>
-            <div className='pl-[10%] text-xl leading-9 tracking-wider text-[#1A1A1A]'>三級古蹟「先嗇宮」香火鼎盛，信仰與文化的能量深植人心； 雙北曼哈頓大都會公園，國際級綠地環抱。文化與自然於此生生不息。</div>
+            <div className='pl-[10%] text-lg lg:text-xl leading-9 tracking-wider text-[#1A1A1A]'>三級古蹟「先嗇宮」香火鼎盛，信仰與文化的能量深植人心； 雙北曼哈頓大都會公園，國際級綠地環抱。文化與自然於此生生不息。</div>
           </div>
 
 
