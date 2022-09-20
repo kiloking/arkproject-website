@@ -1,7 +1,8 @@
-import React,{useState} from 'react'
+import React,{useState,useRef} from 'react'
 import { FaFacebookF,FaPhoneAlt,FaMapMarkerAlt,FaAngleDown } from 'react-icons/fa';
 import { useForm, reset } from "react-hook-form";
 import Modal from './Components/Modal';
+import emailjs from '@emailjs/browser';
 function Section2() {
   // #00A3C4
   // #ffffff
@@ -18,6 +19,7 @@ function Section2() {
       area:""
     }
   });
+  const form = useRef();
   const sendFormStatusModal = ()=>{
     setFormStatus(true)
 
@@ -25,15 +27,23 @@ function Section2() {
       setFormStatus(false)
     },5000)
   }
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_itz2obw', 'template_181hmkg', form.current, 'WCmBKCXIrcbuFU2-m')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   const onSubmit = data => {
     console.log(data)
-    // const form_data = new FormData()
-    // form_data.append("name", data.name);
-    // form_data.append("tel", data.tel);
-    // form_data.append("mail", data.mail);
-    // form_data.append("house_types", data.house_types);
-    // form_data.append("area", data.area);
-    // dtat.checkit
+    console.log(form.current)
+
+    /**
+     * php方法 先停用 
+     * 
     let url1 = process.env.PUBLIC_URL+'/assets/sendsee.php'
     let url2 = process.env.PUBLIC_URL+'/api/contact/index.php'
     fetch(url1, {
@@ -47,21 +57,9 @@ function Section2() {
         sendFormStatusModal()
       }
     }).catch(error => console.log('error'));
-
-    // axios({
-    //   method- "post",
-    //   url- url2,
-    //   headers- { "content-type"- "application/json" },
-    //   data-data
-    // })
-    // .then(result => {
-    //   if (result.data.sent) {
-    //     console.log(result.data)
-    //     console.log('ok')
-    //   }
-      
-    // })
-    // .catch(error => console.log('error'));
+    *
+    *
+    **/
 
   };
   return (
@@ -123,10 +121,10 @@ function Section2() {
         <div className='w-full  lg:w-1/2'>
           <div className='text-[#20494C] text-2xl font-normal  text-center mb-5  lg:text-left-left'>線上預約</div>
           <div className='h-[2px] bg-[#20494C] w-full my-3'></div>
-          <form onSubmit={handleSubmit(onSubmit)} className="w-full mx-auto my-14  rel" data-aos="fade-up" data-aos-duration="1500" >
+          <form onSubmit={sendEmail} className="w-full mx-auto my-14  rel" data-aos="fade-up" data-aos-duration="1500" ref={form}>
             <div className='w-full  my-5 '>
               <input type="text" className="block  bg-white rounded-md  w-full
-                  px-5 py-5 " placeholder="姓名"    {...register("name", { required: true})}/>
+                  px-5 py-5 " placeholder="姓名"   {...register("name", { required: true})}/>
             </div>
             <div className='w-full  my-5 '>
               <input type="text" className="block  bg-white rounded-md  w-full 
@@ -134,10 +132,10 @@ function Section2() {
             </div>
             <div className='w-full my-5  '>
               <input type="mail" className="block  bg-white rounded-md   w-full
-                  px-5 py-5 " placeholder="電子信箱"    {...register("mail", { required: true})}/>
+                  px-5 py-5 " placeholder="電子信箱"   {...register("mail", { required: true})}/>
             </div>
             <div className='w-full  my-5  relative'>
-              <select className="block bg-white rounded-md appearance-none w-full px-5 py-5" {...register("house_types", { required: true})}>
+              <select className="block bg-white rounded-md appearance-none w-full px-5 py-5"  name="user_types" {...register("house_types", { required: true})}>
                 <option defaultValue value="">需要房型</option>
 								<option value="28~30-2房">28~30-2房</option>
 								<option value="39~43-3房">39~43-3房</option>
@@ -147,7 +145,7 @@ function Section2() {
               <div className=' absolute top-[50%] right-5 -translate-Y-[50%] pointer-events-none'> <FaAngleDown /> </div>
             </div>
             <div className='w-full  my-5 relative'>
-              <select className="block bg-white  rounded-md appearance-none w-full px-5 py-5" {...register("area", { required: true})}>
+              <select className="block bg-white  rounded-md appearance-none w-full px-5 py-5"  {...register("area", { required: true})}>
                 <option defaultValue value="">居住區域</option>
                 <option value="台北市">台北市</option>
                 <option value="三蘆區">三蘆區</option>
