@@ -28,11 +28,14 @@ function Section2() {
     },5000)
   }
   const sendEmail = (e) => {
-    e.preventDefault();
-
+    // e.preventDefault();
+    // console.log(form.current)
     emailjs.sendForm('service_itz2obw', 'template_181hmkg', form.current, 'WCmBKCXIrcbuFU2-m')
       .then((result) => {
           console.log(result.text);
+          if(result.text === 'OK'){
+            sendFormStatusModal()
+          }
       }, (error) => {
           console.log(error.text);
       });
@@ -121,7 +124,7 @@ function Section2() {
         <div className='w-full  lg:w-1/2'>
           <div className='text-[#20494C] text-2xl font-normal  text-center mb-5  lg:text-left-left'>線上預約</div>
           <div className='h-[2px] bg-[#20494C] w-full my-3'></div>
-          <form onSubmit={sendEmail} className="w-full mx-auto my-14  rel" data-aos="fade-up" data-aos-duration="1500" ref={form}>
+          <form onSubmit={handleSubmit(sendEmail)} className="w-full mx-auto my-14  rel" data-aos="fade-up" data-aos-duration="1500" ref={form}>
             <div className='w-full  my-5 '>
               <input type="text" className="block  bg-white rounded-md  w-full
                   px-5 py-5 " placeholder="姓名"   {...register("name", { required: true})}/>
