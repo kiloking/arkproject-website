@@ -10,7 +10,7 @@ function Section2() {
   const [error, setError] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const [formStatus , setFormStatus] = useState(false)
-  const { register, handleSubmit, formState:{ errors } } = useForm({
+  const { register, handleSubmit, formState:{ errors },reset } = useForm({
     defaultValues:{
       name:"",
       tel: "",
@@ -35,6 +35,7 @@ function Section2() {
           console.log(result.text);
           if(result.text === 'OK'){
             sendFormStatusModal()
+            reset()
           }
       }, (error) => {
           console.log(error.text);
