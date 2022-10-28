@@ -19,8 +19,17 @@ function Header() {
         style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/header_bg.png'})`}}
         data-aos="fade" data-aos-duration="1500"
       >
-        <img src={process.env.PUBLIC_URL+'/images/header_logo.png'} alt="" className='absolute top-20 right-30 w-auto lg:hidden'/> 
-        <img src={process.env.PUBLIC_URL+'/images/header_logo.png'} alt="" className='absolute bottom-20 right-10 w-auto hide lg:block'/> 
+        <div className='w-3/4  mx-auto  my-[15%]'>
+          <div className='flex flex-wrap justify-center items-center text-center'>
+            <div className='w-1/2'></div>
+            <div className='w-1/2 mb-32'> <img src={process.env.PUBLIC_URL+'/images/header_logo.png'} alt=""  className='max-w-full mx-auto'/></div>
+            <div className='w-1/2 '> <img src={process.env.PUBLIC_URL+'/images/header_subtitle.png'} alt="" className='max-w-full mx-auto' /></div>
+            <div className='w-1/2'> <img src={process.env.PUBLIC_URL+'/images/header_title.png'} alt="" className='max-w-full mx-auto' /></div>
+          </div>
+
+        </div>
+        <img src={process.env.PUBLIC_URL+'/images/header_label.png'} alt="" className='absolute top-20 right-30 w-auto lg:hidden'/> 
+        <img src={process.env.PUBLIC_URL+'/images/header_label.png'} alt="" className='absolute bottom-20 right-10 w-auto hide lg:block'/> 
       </div>
     </div>
   )
