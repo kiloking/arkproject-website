@@ -20,11 +20,14 @@ function Header() {
         data-aos="fade" data-aos-duration="1500"
       >
         <div className='w-3/4  mx-auto  my-[15%]'>
-          <div className='flex flex-wrap justify-center items-center text-center'>
+          <div className='flex flex-wrap justify-center items-center text-center '>
             <div className='w-1/2'></div>
-            <div className='w-1/2 mb-32'> <img src={process.env.PUBLIC_URL+'/images/header_logo.png'} alt=""  className='max-w-full mx-auto'/></div>
-            <div className='w-1/2 '> <img src={process.env.PUBLIC_URL+'/images/header_subtitle.png'} alt="" className='max-w-full mx-auto' /></div>
-            <div className='w-1/2'> <img src={process.env.PUBLIC_URL+'/images/header_title.png'} alt="" className='max-w-full mx-auto' /></div>
+            <div className='w-1/2 mb-32 p-5'> <img src={process.env.PUBLIC_URL+'/images/header_logo.png'} alt=""  className='max-w-full mx-auto'/></div>
+            <div className='w-1/2  relative pr-20'> 
+              <img src={process.env.PUBLIC_URL+'/images/header_subtitle.png'} alt="" className='max-w-full ' />
+              <div className='h-[1px] w-[38%] bg-[#20494C]  absolute top-[15%] -left-[42%]' ></div>
+            </div>
+            <div className='w-1/2 p-5'> <img src={process.env.PUBLIC_URL+'/images/header_title.png'} alt="" className='max-w-full mx-auto' /></div>
           </div>
 
         </div>
