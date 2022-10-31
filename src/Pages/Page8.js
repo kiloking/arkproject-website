@@ -2,7 +2,7 @@ import React from 'react'
 
 function Page8() {
   return (
-    <div className='flex items-center pt-[8%] pb-[18%] ms:pb-8% gap-1 flex-col lg:flex-col bg-white lg:bg-white h-screen lg:h-auto justify-between'>
+    <div className='flex items-center pt-[8%] pb-[18%] ms:pb-8% gap-1 flex-col lg:flex-col bg-white lg:bg-transparent h-screen lg:h-auto justify-between'>
       <div className='flex  justify-center  lg:justify-between items-center  lg:mt-[6%] mb-6 w-5/6 mx-auto' data-aos="fade" data-aos-duration="1500">
 
         {/* <img src={process.env.PUBLIC_URL+'/images/page8_title.png'} alt="" className='w-4/5 w-2/5@md max-w-full '/> */}

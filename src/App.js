@@ -53,7 +53,7 @@ function App() {
         </Slider>
       </div>
 
-      <div className="hidden  lg:block">
+      <div className="hidden  lg:block bg-center bg-cover bg-no-repeat bg-new-bg  bg-fixed">
         <Page1/>
         <Page2/>
         <Page3/>

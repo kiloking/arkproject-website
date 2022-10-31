@@ -2,7 +2,7 @@ import React from 'react'
 
 function Page6() {
   return (
-    <div className='flex items-center pt-[8%] pb-[18%] lg:pb-[8%] gap-1 flex-col lg:flex-row bg-white lg:bg-white h-screen lg:h-auto justify-between'>
+    <div className='flex items-center pt-[8%] pb-[18%] lg:pb-[8%] gap-1 flex-col lg:flex-row bg-white lg:bg-transparent h-screen lg:h-auto justify-between '>
       
       <div className='lg:w-[55%] '>
         <div className=' lg:py-[18%] lg:py-[10%] px-[10%] ' data-aos="fade" data-aos-duration="1500">

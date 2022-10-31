@@ -2,9 +2,9 @@ import React from 'react'
 
 function Page2() {
   return (
-    <div className='flex items-center pt-[8%] pb-[18%] lg:pb-[8%] gap-1 flex-col lg:flex-row bg-[#E7ECEF] lg:bg-white h-screen lg:h-auto justify-between'>
+    <div className='flex items-center pt-[8%] pb-[18%] lg:pb-[8%] gap-1 flex-col lg:flex-row bg-[#E7ECEF] lg:bg-transparent h-screen lg:h-auto justify-between '>
       <div className='lg:w-[55%]'>
-        <div className='bg-[#E7ECEF]  lg:py-[18%] lg:py-[10%] px-[10%]' data-aos="fade" data-aos-duration="1500">
+        <div className='bg-transparent  lg:py-[18%] lg:py-[10%] px-[10%]' data-aos="fade" data-aos-duration="1500">
           {/* <img src={process.env.PUBLIC_URL+'/images/page2_title.png'} alt="" className='w-4/5 w-1/2@md mb-16'/> */}
           <div className='text-3xl lg:text-4xl  font-bold text-[#20494C] tracking-wide leading-10 mb-5'>三環六線軌道經濟<br />
 先嗇宮站漫步3分鐘</div>

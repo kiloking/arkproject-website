@@ -14,7 +14,10 @@ module.exports = {
     extend: {
       animation:{
         'slide-flow': 'oxxo 3s ease-in-out infinite alternate'
-      }
+      },
+      backgroundImage: {
+        "new-bg": "url('./img/section_new_bg.png')"
+      },
     },
   },
   plugins: [],

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Page3() {
   return (
-    <div className='flex justify-between items-center pt-[8%] pb-[18%] lg:pb-[8%] gap-1 flex-col lg:flex-row bg-white bg-white@md h-screen lg:h-auto'>
+    <div className='flex justify-between items-center pt-[8%] pb-[18%] lg:pb-[8%] gap-1 flex-col lg:flex-row bg-transparent  h-screen lg:h-auto '>
       <div className='lg:w-45% gap-5 order-last lg:order-first hidden lg:block' data-aos="fade-up" data-aos-duration="1500">
         <img src={process.env.PUBLIC_URL+'/images/page3_p01.png'} alt="" className='w-full'/>
       </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Page5() {
   return (
-    <div className='block w-full aspect-[951/1300] lg:aspect-[1920/951] bg-[#20494C] relative pt-[8%] pb-[18%] lg:pb-[8%] h-screen lg:h-auto'>
+    <div className='block w-full aspect-[951/1300] lg:aspect-[1920/951] bg-[#20494C] relative pt-[8%] pb-[18%] lg:pb-[8%] h-screen lg:h-auto '>
       <div
         className='inset-0 absolute bg-left bg-no-repeat bg-cover  z-0  hidden lg:block'
         style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/page5_bg.png'})`}}
