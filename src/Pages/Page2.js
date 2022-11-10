@@ -2,7 +2,7 @@ import React from 'react'
 
 function Page2() {
   return (
-    <div className='flex items-center pt-[8%] pb-[18%] lg:pb-[8%] gap-1 flex-col lg:flex-row bg-[#E7ECEF] lg:bg-transparent h-screen lg:h-auto justify-between '>
+    <div className='flex items-center pt-[8%] pb-[18%] lg:pb-[8%] gap-1 flex-col lg:flex-row bg-[#E7ECEF] lg:bg-transparent h-screen lg:h-auto justify-center  '>
       <div className='lg:w-[55%]'>
         <div className='bg-transparent  lg:py-[18%] lg:py-[10%] px-[10%]' data-aos="fade" data-aos-duration="1500">
           {/* <img src={process.env.PUBLIC_URL+'/images/page2_title.png'} alt="" className='w-4/5 w-1/2@md mb-16'/> */}
@@ -10,19 +10,18 @@ function Page2() {
 先嗇宮站漫步3分鐘</div>
           <div className='text-lg lg:text-xl leading-9 tracking-wider text-[#1A1A1A]'>三重二重埔最美麗的豐年軸線，串接三環六線，<br />
 高效路網縱貫四方，一脈串接最便捷的當代效率與時代文明。</div>
-          <div className='text-lg lg:text-xl text-[#1A1A1A] border-l-[12px] border-white pl-5 leading-9 tracking-wider mt-5'>
-            <div>1站機捷：三蘆雙捷運</div>  
-            <div>9橋之都：瞬移台北核心</div> 
-            <div>6鐵共構：10分鐘台北車站</div> 
-            <div>1高2快：國道1號、64快、台一線</div> 
+          <div className='text-lg lg:text-xl text-[#1A1A1A] leading-9 tracking-wider mt-5'>
+            <div>1高3快：高速路網，縱貫南北經濟清軸線，悠遊雙北繁華生活</div> 
+            <div>3捷6鐵：三環六線軌道佈局，換乘一站直達北車六鐵共榮圈</div> 
+            <div>9橋之都：大雙北最強交通樞紐，橫跨兩大川淡水河、大漢溪</div> 
           </div>
         </div>
       </div>
       <div className='lg:w-[45%] gap-5 hidden lg:block' data-aos="fade-up" data-aos-duration="1500">
-        <img src={process.env.PUBLIC_URL+'/images/page2_p01.png'} alt="" className='w-full'/>
+        <img src={process.env.PUBLIC_URL+'/images/page02_g01.png'} alt="" className='w-full'/>
       </div>
       <div className='lg:hidden'>
-        <img src={process.env.PUBLIC_URL+'/images/page2_p01_mb.png'} alt="" className='w-full'/>
+        <img src={process.env.PUBLIC_URL+'/images/page02_g01_mb.png'} alt="" className='w-full'/>
       </div>
 
     </div>
