@@ -9,7 +9,7 @@ function Page7() {
           <div className='w-4/5 mx-auto'>
             {/* <img src={process.env.PUBLIC_URL+'/images/page7_title.png'} alt="" className='max-w-full mb-16'/> */}
             <div className='text-3xl lg:text-4xl  font-bold text-[#20494C]  pt-5 pb-5  mb-5'>黃金級綠建築規劃</div>
-            <div className=' text-lg lg:text-xl leading-9 tracking-wider text-[#1A1A1A]'>遵由內政部建築研究所研擬「綠建築指標系統EEWH」七大指標，【冠德方舟計劃】全案以「黃金綠建築」等級規劃設計。</div>
+            <div className=' text-lg lg:text-xl leading-9 tracking-wider text-[#1A1A1A]'>遵由內政部建築研究所研擬「綠建築指標系統EEWH」七大指標，【冠德心天匯】全案以「黃金綠建築」等級規劃設計。</div>
           </div>
           <img src={process.env.PUBLIC_URL+'/images/page07_g01.png'} alt="" className='max-w-full object-fill absolute -top-12 right-5  aspect-square w-1/4'/>
 
