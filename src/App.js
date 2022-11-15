@@ -39,7 +39,7 @@ function App() {
     <div className="App">
       <Header />
       <Section1 />
-      <div className="block lg:hidden ">
+      <div className="block lg:hidden bg-center bg-cover bg-no-repeat bg-new-bg  bg-fixed">
         <Slider {...settings} className="pb:25">
           <div><Page1/></div>
           <div><Page2/></div>

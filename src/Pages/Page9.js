@@ -2,10 +2,14 @@ import React from 'react'
 
 function Page9() {
   return (
-    <div className='flex items-center pt-[8%] pb-[18%] ms:pb-8% gap-1 flex-col lg:flex-row bg-[#E7ECEF] lg:bg-transparent h-screen lg:h-auto justify-between mx-5'>
-      <div className=' lg:w-[50%] order-last lg:order-first px-[12%] lg:px-0' data-aos="fade-up" data-aos-duration="1500">
+    <div className='flex items-center pt-[8%] pb-[18%] ms:pb-8% gap-1 flex-col lg:flex-row  h-screen lg:h-auto justify-between mx-5'>
+      <div className=' lg:w-[50%] order-last lg:order-first px-[12%] lg:px-0 hidden  lg:flex' data-aos="fade-up" data-aos-duration="1500">
         <img src={process.env.PUBLIC_URL+'/images/page09_g01.png'} alt="" className='w-full'/>
       </div>
+      <div className=' lg:w-[50%] order-last lg:order-first px-[12%] lg:px-0   lg:hidden' data-aos="fade-up" data-aos-duration="1500">
+        <img src={process.env.PUBLIC_URL+'/images/page09_g01.png'} alt="" className='w-full'/>
+      </div>
+
       <div className='lg:w-[50%] order-first lg:order-last' data-aos="fade" data-aos-duration="1500">
         <div className='bg-transparent lg:px-[10%] lg:py-[0%] '>
           <div className='w-4/5 mx-auto'>
