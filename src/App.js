@@ -14,6 +14,7 @@ import Page6 from "./Pages/Page6";
 import Page7 from "./Pages/Page7";
 import Page8 from "./Pages/Page8";
 import Page9 from "./Pages/Page9";
+import Newyear from "./Pages/Newyear";
 
 import Slider from "react-slick";
 
@@ -38,6 +39,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Newyear />
       <Section1 />
       <div className="block lg:hidden bg-center bg-cover bg-no-repeat bg-new-bg  bg-fixed">
         <Slider {...settings} className="pb:25">
