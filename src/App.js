@@ -38,8 +38,8 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Header />
       <Newyear />
+      <Header />
       <Section1 />
       <div className="block lg:hidden bg-center bg-cover bg-no-repeat bg-new-bg  bg-fixed">
         <Slider {...settings} className="pb:25">
