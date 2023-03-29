@@ -180,16 +180,16 @@ function Section2() {
       
       <div className='w-11/12 mx-auto pb-10'>
         <div className='h-[2px] bg-[#20494C] w-full my-12'></div>
-        <div className='w-8/12 mx-auto flex gap-6 flex--col  lg:flex-row'>
-          <a href="https-//www.kindom.com.tw/artofliving/?utm_source=google&utm_medium=pmax&utm_campaign=0812&gclid=CjwKCAjwo_KXBhAaEiwA2RZ8hM6YN0LtKzVCE3BemS1mpjqFAzQ2vAel8Ypk7fb8tK5oFmCLW7YKkBoCDtEQAvD_BwE" target="_blank" data-aos="fade-up" data-aos-duration="1500">
+        <div className='w-8/12 mx-auto flex gap-6 flex-col  lg:flex-row'>
+          <a href="https-//www.kindom.com.tw/artofliving/?utm_source=google&utm_medium=pmax&utm_campaign=0812&gclid=CjwKCAjwo_KXBhAaEiwA2RZ8hM6YN0LtKzVCE3BemS1mpjqFAzQ2vAel8Ypk7fb8tK5oFmCLW7YKkBoCDtEQAvD_BwE" target="_blank" data-aos="fade-up" data-aos-duration="1500" className='transition-all hover:brightness-110'>
             <img src={process.env.PUBLIC_URL+'/images/section2_p01.png'} alt="" className='w-full'/>
             <div className='text-[#20494C] text-base font-bolder mt-2'>冠德大直3號出口</div>
           </a>
-          <a href="https-//www.kindom.com.tw/g8/" target="_blank" data-aos="fade-up" data-aos-duration="1500">
+          <a href="https-//www.kindom.com.tw/g8/" target="_blank" data-aos="fade-up" data-aos-duration="1500" className='transition-all hover:brightness-110'>
             <img src={process.env.PUBLIC_URL+'/images/section2_p02.png'} alt="" className='w-full'/>
             <div className='text-[#20494C] text-base font-bolder mt-2'>冠德文心綻</div>
           </a>
-          <a href="https-//www.kindom.com.tw/portfolio/" target="_blank" data-aos="fade-up" data-aos-duration="1500">
+          <a href="https-//www.kindom.com.tw/portfolio/" target="_blank" data-aos="fade-up" data-aos-duration="1500" className='transition-all hover:brightness-110'>
             <img src={process.env.PUBLIC_URL+'/images/section2_p03.png'} alt="" className='w-full'/>
             <div className='text-[#20494C] text-base font-bolder mt-2'>了解更多冠德</div>
           </a>

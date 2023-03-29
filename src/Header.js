@@ -41,6 +41,7 @@ function Header() {
         
         <img src={process.env.PUBLIC_URL+'/images/header_label.png'} alt="" className='absolute bottom-10 right-10 w-1/6 hide md:w-[12%] md:bottom-5 md:right-5  lg:block'/> 
       </div>
+      
     </div>
   )
 }
