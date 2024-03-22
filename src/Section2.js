@@ -103,11 +103,11 @@ function Section2() {
       </Modal>  }
       <div className='w-11/12 mx-auto flex gap-10 flex-col  lg:flex-row justify-start' >
         <div className='w-full  lg:w-1/2' data-aos="fade-up" data-aos-duration="1500">
-          <div className='text-[#20494C] text-2xl font-normal  mb-5 hidden lg:block'>先嗇宮站漫步3分鐘｜28-60坪．2-4房</div>
+          <div className='text-[#20494C] text-2xl font-normal  mb-5 hidden lg:block'>先嗇宮站漫步3分鐘 40-60坪．3-4房</div>
           <div className='h-[2px] bg-[#20494C] w-full my-3 hidden  lg:block'></div>
           <div className='flex items-center gap-5 mb-5 mt-14 mt-0@md'>
             <div className='bg-[#20494C] rounded-full p-4 mr-3'><FaFacebookF color='white' size='20' /></div>
-            <a href="https-//www.facebook.com/theButterflyLandscape" target="_blank"><b className='text-[#20494C] text-2xl font-medium'>冠德方舟計劃粉絲團</b></a>
+            <a href="https-//www.facebook.com/theButterflyLandscape" target="_blank"><b className='text-[#20494C] text-2xl font-medium'>冠德心天匯粉絲團</b></a>
           </div>
           <div className='flex items-center gap-5 mb-5 '>
             <div className='bg-[#20494C] rounded-full p-4 mr-3'><FaPhoneAlt color='white' size='20' /></div>

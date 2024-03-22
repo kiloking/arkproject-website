@@ -9,7 +9,7 @@ function Header() {
         <a href="https://www.facebook.com/theButterflyLandscape" target="_blank"><img src={process.env.PUBLIC_URL+'/images/header_btn3.png'} alt="" className='max-w-full'/></a>
       </div>
       <div
-        className='lg:hidden aspect-[862/1152]  bg-center bg-no-repeat bg-cover flex flex-col items-center justify-center gap-5 z-0'
+        className='lg:hidden aspect-[862/1720]  bg-center bg-no-repeat bg-cover flex flex-col items-center justify-center gap-5 z-0'
         data-aos="fade" data-aos-duration="1500"
         style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/header_bg_mb.png'})`}}
       >
